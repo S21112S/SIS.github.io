@@ -1,0 +1,138 @@
+/* Reset de estilos para una mejor consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 80px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+}
+
+
+/*Ejemplo de caja de menu*/
+/*<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Vertical Centrado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(10, 5, 10, 4.1);
+        }
+
+        .menu {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 200px;
+            background-color: #9d9d9d;
+            border-radius: 10px;
+            gap: 15px;
+        }
+
+        .menu a {
+            background-color: black;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.1s;
+
+        }
+    
+        
+        .menu a:hover {
+            background-color: #575757;
+        }
+
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: row;
+                overflow-x: auto;
+            }
+
+            .menu a {
+                flex: 1;
+                border-bottom: none;
+                border-right: 1px solid #444;
+
+            }
+
+            .menu a:last-child {
+                border-right: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="menu">
+            <a href="#">Botón 1</a>
+            <a href="#">Botón 2</a>
+            <a href="#">Botón 3</a>
+            <a href="#">Botón 4</a>
+            <a href="#">Botón 5</a>
+        </div>
+    </div>
+</body>
+</html>*/
