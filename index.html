@@ -59,11 +59,13 @@
             align-items: center;
             padding: 0.75rem 1rem;
             border-radius: 8px;
-            background-color: #ff8c00; /* Color naranja */
+            background-color: #ff8c00;
             transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra para los botones */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent; /* Eliminar brillo azul en móviles */
         }
+
         .icono-boton:hover {
             background-color: #ffa500; /* Color naranja más claro al pasar el ratón */
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -137,23 +139,23 @@
         <section class="menu">
             <div class="icono-boton">
                 <i class="fas fa-home"></i>
-                <a class="button-link" href="https://chatgpt.com/" target="_blank">HOME</a>
+                <a class="button-link" data-url="https://chatgpt.com/">HOME</a>
             </div>
             <div class="icono-boton">
                 <i class="fab fa-whatsapp"></i>
-                <a class="button-link" href="https://wa.me/595982595694?text=Hola!%20Quiero%20conocer%20más%20sobre%20tus%20servicios%20y%20productos." target="_blank">WhatsApp</a>
+                <a class="button-link" data-url="https://wa.me/595982595694?text=Hola!%20Quiero%20conocer%20más%20sobre%20tus%20servicios%20y%20productos." target="_blank">WhatsApp</a>
             </div>
             <div class="icono-boton">
                 <i class="fas fa-map-marker-alt"></i>
-                <a class="button-link" href="https://bit.ly/4eXyH3F" target="_blank">Ubicación</a>
+                <a class="button-link" data-url="https://bit.ly/4eXyH3F" target="_blank">Ubicación</a>
             </div>
             <div class="icono-boton">
                 <i class="fab fa-facebook"></i>
-                <a class="button-link" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a class="button-link" data-url="https://www.facebook.com/" target="_blank">Facebook</a>
             </div>
             <div class="icono-boton">
                 <i class="fas fa-bars"></i>
-                <a class="button-link" href="https://drive.google.com/file/d/1Gk9diYi2H6zH2ShTxD-Ch47ZRZ-HAzL1/view?usp=drivesdk" target="_blank">Menú</a>
+                <a class="button-link" data-url="https://drive.google.com/file/d/1Gk9diYi2H6zH2ShTxD-Ch47ZRZ-HAzL1/view?usp=drivesdk" target="_blank">Menú</a>
             </div>
         </section>
         <div class="texto-abajo-menu">
@@ -163,5 +165,6 @@
             </div>
         </div>
     </div>
+    <script src="javascript/func.js"></script>
 </body>
 </html>
